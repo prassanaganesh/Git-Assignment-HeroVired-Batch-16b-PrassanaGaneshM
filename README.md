@@ -25,8 +25,9 @@ All steps below include the actual commands and outputs captured during executio
        git checkout dev
 
 ## d. Added Provided Calculator Application Code
-       ```Python
-       import math
+
+```Python
+import math
 class Calculator:
     def add(self, a, b):
         return a + b
@@ -36,8 +37,7 @@ class Calculator:
         return a * b
     def divide(self, a, b):
         return a / b
-
-
+```
 ## e. Commit 
        git add .
        git commit -m "Add base calculator"
@@ -63,4 +63,10 @@ class Calculator:
 
 <img width="937" height="208" alt="image" src="https://github.com/user-attachments/assets/cc31ed46-dfbc-42bc-b00c-39793b2e0d3b" />
 
+## i. Implement Square Root Feature
 
+       git add .
+       git commit -m "Added square root feature"
+       git push origin feature/sqrt
+
+       
