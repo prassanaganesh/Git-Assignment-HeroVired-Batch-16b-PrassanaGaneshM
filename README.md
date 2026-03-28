@@ -69,4 +69,22 @@ class Calculator:
        git commit -m "Added square root feature"
        git push origin feature/sqrt
 
+## j. Fix Critical Bug in dev
        
+- Updated divide function:
+
+ ```python
+      def divide(self, a, b):
+           if b == 0:
+         raise ValueError("Cannot divide by zero.")
+           return a / b
+```
+- Commit fix:
+  
+         git checkout dev
+         git add .
+         git commit -m "Fix division by zero bug"
+         git push origin dev
+
+<img width="1332" height="912" alt="image" src="https://github.com/user-attachments/assets/e7c4ec09-f4b2-4f88-9004-1e341ab9a4ef" />
+
