@@ -149,3 +149,75 @@ g. Verify LFS Tracking
        git lfs ls-files
        
 <img width="1385" height="912" alt="image" src="https://github.com/user-attachments/assets/1ffd6cb1-7c13-4198-91f3-51ecdf048d33" />
+
+# Q3 – Geometry Calculator using Git Stash
+
+a. Create Branch
+
+       git branch geometry-calculator
+       git checkout geometry-calculator
+
+b. Add Base Geometry Code
+
+```python
+import math
+class GeometryCalculator:
+    def calculate_circle_area(self, radius):
+        return math.pi * radius ** 2
+    def calculate_rectangle_area(self, length, width):
+        return length * width
+```
+Circle Area Feature
+       
+       git branch feature/circle-area
+       git checkout feature/circle-area
+
+
+Stash changes:
+
+       git stash
+       git stash list
+
+<img width="1488" height="802" alt="image" src="https://github.com/user-attachments/assets/bff85bb5-2a17-4f4a-a367-fc258eba657b" />
+       
+Rectangle Area Feature
+      
+       git branch feature/rectangle-area
+       git checkout feature/rectangle-area
+
+ Stash incomplete work:
+
+      git stash
+ 
+<img width="940" height="442" alt="image" src="https://github.com/user-attachments/assets/aea8adc2-9bd2-40ce-bb12-8cd8c7df77c6" />
+
+Resume Circle Feature
+       
+       git checkout feature/circle-area
+       git stash pop
+       
+Commit
+       git commit -m "Add circle area feature"
+       git push origin feature/circle-area
+
+Resume Rectangle Feature
+      
+       git checkout feature/rectangle-area
+       git stash pop
+
+Commit
+       git commit -m "Add rectangle area feature"
+       git push origin feature/rectangle-area
+
+Pull Requests
+
+| Source                 | Target |
+| feature/circle-area    | dev |
+| feature/rectangle-area | dev |
+
+<img width="1257" height="577" alt="image" src="https://github.com/user-attachments/assets/c4e905a9-257d-410f-a805-2d9e781c8148" />
+
+<img width="1068" height="850" alt="image" src="https://github.com/user-attachments/assets/fde70801-488f-422a-ae9a-92405e64f5a6" />
+
+<img width="1016" height="272" alt="image" src="https://github.com/user-attachments/assets/89f34a85-24b7-473e-a5cf-29c19bc28988" />
+
