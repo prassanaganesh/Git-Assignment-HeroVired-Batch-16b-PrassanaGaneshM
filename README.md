@@ -134,4 +134,17 @@ d. Commit .gitattributes
 
 e. Add Large Binary File
 
+       Rawdata.zip
+       git add Rawdata.zip
+       git commit -m "Add large file using Git LFS"
+
+<img width="946" height="170" alt="image" src="https://github.com/user-attachments/assets/0df1aff6-2e9b-41bb-91e8-7ce14a40f679" />
+
+f. Push Branch
+
+       git push origin lfs       
+
+g. Verify LFS Tracking
+
+       git lfs ls-files
        
