@@ -148,3 +148,4 @@ g. Verify LFS Tracking
 
        git lfs ls-files
        
+<img width="1385" height="912" alt="image" src="https://github.com/user-attachments/assets/1ffd6cb1-7c13-4198-91f3-51ecdf048d33" />
