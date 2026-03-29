@@ -96,3 +96,42 @@ class Calculator:
 
 <img width="1327" height="786" alt="image" src="https://github.com/user-attachments/assets/edbc10df-2f67-4a96-8224-b4d4630eb42e" />
 
+
+# Q2 – Git Large File Storage (LFS)
+
+a.Create lfs Branch
+
+       git lfs install --> Install Git LFS
+       git branch lfs
+       git checkout lfs
+       
+b. Verify Git LFS Installation
+       git lfs status
+       
+-Output:
+
+       On branch lfs
+
+Objects to be committed:
+
+       Objects not staged for commit:
+       This confirms Git LFS is installed.-Track Large Files
+
+       
+c. Track Large Files
+
+       git lfs track "*.zip" --> Track large files
+
+       git branch lfs       
+       
+<img width="1202" height="330" alt="image" src="https://github.com/user-attachments/assets/924104d3-50a7-49d6-a84a-965deb74d7c1" />
+
+d. Commit .gitattributes
+       git add .gitattributes
+       git commit -m "Configure Git LFS tracking"
+       
+<img width="1482" height="717" alt="image" src="https://github.com/user-attachments/assets/42ce0bed-8356-4e7b-9085-a812a64d1536" />
+
+e. Add Large Binary File
+
+       
