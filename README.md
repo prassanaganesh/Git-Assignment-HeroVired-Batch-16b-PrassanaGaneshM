@@ -88,3 +88,11 @@ class Calculator:
 
 <img width="1332" height="912" alt="image" src="https://github.com/user-attachments/assets/e7c4ec09-f4b2-4f88-9004-1e341ab9a4ef" />
 
+## Pull Request & Review
+
+       - PR from feature/sqrt → main.
+       - Merge feature/sqrt → dev
+       - Merge dev → main.
+
+<img width="1327" height="786" alt="image" src="https://github.com/user-attachments/assets/edbc10df-2f67-4a96-8224-b4d4630eb42e" />
+
