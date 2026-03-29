@@ -1,10 +1,8 @@
 import math
-class Calculator:
-    def add(self, a, b):
-        return a + b
-    def subtract(self, a, b):
-        return a - b
-    def multiply(self, a, b):
-        return a * b
-    def divide(self, a, b):
-        return a / b
+class GeometryCalculator:
+    def calculate_circle_area(self, radius):
+        return math.pi * radius ** 2
+    def calculate_rectangle_area(self, length, width):
+        return length * width
+
+        
